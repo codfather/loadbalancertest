@@ -1,4 +1,5 @@
 This process uses Digital Ocean Ubuntu 14.04 VM's, so you will need a free Digital Ocean account to start.
+https://www.digitalocean.com/
 
 This also assumes this will be run on an OSX or Linux machine - untested on Windows,though it would work perfectly in a Linux VM using Virtualbox on Windows.You will need a machine with access to the Internet.
 
