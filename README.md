@@ -24,7 +24,7 @@ then
 
 then
 
-ssh root@<ip-address-from-above>
+ssh root@ip-address-from-above
 
 Once all is tested and working you can run the script below to bring up the load balanced infrastructure.
 
