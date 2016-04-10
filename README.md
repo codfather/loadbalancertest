@@ -34,7 +34,7 @@ The process will output some parts of the process as it goes.
 
 The IP address of the web server will be printed at the end of the process install script, and that will be the address to point your browser at to check all is working. Due to the different times taken to instantiate VM's at different times of the day, it is IMPORTANT to wait a short while if the first test does not load. The software could still be being installed.
 
-Once you have successfully run the test, you can delete all the VM's either using the Digital Ocean Gui, or using my deldroplet.rb all command - included for this task.
+Once you have successfully run the test, you can delete all the VM's either using the Digital Ocean Gui, or using my "deldroplet.rb all" command - included for this task.
 
 NB
 If you have any questions or issues please contact me on nick@holevy.co.uk or Skype: swcodfather
