@@ -13,7 +13,7 @@ ie Oauth_key=digital-ocean-oauth-key-here
 
 4) You will need to add the private key to your ssh keychain for automatic connections - using ssh-add <private-key-name>
 
-Once this set up and you can launch a test VM and log in to test all is working. You can test the ruby scripts are working by typing the following.
+Once this is setup and you can launch a test VM and log in to test all is working. You can test the ruby scripts are working by typing the following.
 
 ./createdroplet.rb -n testvm
 
