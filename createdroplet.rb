@@ -27,13 +27,6 @@ OptionParser.new do |opt|
 	opt.on( '-c','--number  DROPNAME','Number of Droplets ') {|number|options[:number] = number}
 end.parse!
 
-#if options[:ostype].nil? then
-	# set the default OS VM image to use - this one supports ansible
-#	$doimage = 'ubuntu-14-04-x64'
-#else
-#	$doimage = options[:ostype]
-#end
-
 def create_droplet(name,image)
 	token=ENV['Oauth_key']
 	client = DropletKit::Client.new(access_token: token)
@@ -48,11 +41,9 @@ end
 numdrops = options[:number].to_i
 #print "#{options[:name]}, #{options[:number]}"
 
-
 1.upto(numdrops) do |i|
 	#if options[:name].nil? then
 	#	count = 1
-
 	dropname = options[:name]
         $int = options[:name]
 	while dropname == nil do
@@ -64,13 +55,6 @@ numdrops = options[:number].to_i
 		dropname = $int+i.to_s
 		print "creating #{dropname}, with #{options[:ostype]}, #{i} \n"
 		create_droplet dropname, options[:ostype]
-	#else
-	#	dropname = options[:name]
-	#	create_droplet 1,dropname
-#else
-#	dropname = ARGV[0]
-	#end
-	#numdrops = numdrops - 1
 end
 #print "Enter you new droplet name ->: "
 #dropname = gets.chomp
