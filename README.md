@@ -5,7 +5,7 @@ This also assumes this will be run on an OSX or Linux machine - untested on Wind
 The ruby scripts have been configured to use the version install on this laptop - you will need to change those to where ever you ruby version and gems are installed.It is the first line of the Ruby script. 
 
 1) You will need to obtain a Digital Ocean oauth ID and set that as an environment variable for your shell and make sure it is exported so all programs can use it
-ie Oauth_key=<digital-ocean-oauth-key-here > 
+ie Oauth_key=digital-ocean-oauth-key-here  
 
 2) You will need to download and install the Digital Ocean API ruby gem to allow connections (version used droplet_kit (1.2.1), also gems optparse, awesome_print and json are needed if not already installed.
 
