@@ -1,10 +1,10 @@
-This process uses Digital Ocean Ubuntu 14.04 VM's
+This process uses Digital Ocean Ubuntu 14.04 VM's, so you will need a free Digital Ocean account to start.
 
 This also assumes this will be run on an OSX or Linux machine - untested on Windows,though it would work perfectly in a Linux VM using Virtualbox on Windows.You will need a machine with access to the Internet.
 
-The ruby scripts have been configured to use the version install on this laptop - you will need to change those to where ever you ruby version and gems are installed.It is the first line of the Ruby script. 
+The ruby scripts have been configured to use the version installed on this laptop - you will need to change those to where ever you ruby version and gems are installed.It is the first line of the Ruby scripts. 
 
-1) You will need to obtain a Digital Ocean oauth ID and set that as an environment variable for your shell and make sure it is exported so all programs can use it
+1) You will need to obtain a Digital Ocean Oauth ID and set that as an environment variable for your shell and make sure it is exported so all programs can use it
 ie Oauth_key=digital-ocean-oauth-key-here  
 
 2) You will need to download and install the Digital Ocean API ruby gem to allow connections (version used droplet_kit (1.2.1), also gems optparse, awesome_print and json are needed if not already installed.
@@ -38,6 +38,6 @@ Once you have successfully run the test, you can delete all the VM's either usin
 NB
 If you have any questions or issues please contact me on nick@holevy.co.uk or Skype: swcodfather
 
-In testing I have noticed that Google Chrome appears to cache or at least associate with the first host it hits - which could well be a setting.
+Firefox and Safari work as designed and Round Robin LoadBalancing is working fine with them.
 
-However, Firefox and Safari work as designed and Round Robin LoadBalancing is working fine with them.
+However,in testing I have noticed that Google Chrome appears to cache or at least associate with the first host it hits - which could well be a cache setting.
